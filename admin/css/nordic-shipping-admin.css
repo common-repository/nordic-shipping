@@ -1,0 +1,324 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.toplevel_page_nordic-shipping-settings .wp-menu-image img {
+  width: 20px;
+  position: relative;
+  top: -2px;
+}
+
+/* Style the tab */
+.tabs {
+  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  overflow: hidden;
+}
+/* woo shipping poup - admin css*/
+.wc-backbone-modal-shipping-method-settings
+  .wc-shipping-zone-method-fields
+  fieldset {
+  margin-bottom: 8px !important;
+}
+
+.nods_shipit_service_ids_in_woos.hide
+{
+  display: none;
+}
+
+/**
+ * Modal for fetching prices
+ */
+#shipit-uniwin-prices-modal .wc-backbone-modal-main {
+  padding-bottom: 0;
+}
+
+#shipit-uniwin-prices-modal article {
+  position: relative;
+  min-height: 200px;
+}
+
+#shipit-uniwin-prices-modal article #shipit-uniwin-ajax-throbber {
+  background: url("../images/spinner.gif") no-repeat center center;
+  background-color: rgba(255, 255, 255, 0.66);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#shipit-uniwin-prices-modal #shipit-uniwin-delivery-info-table {
+  margin-bottom: 20px;
+}
+
+#shipit-uniwin-prices-modal #shipit-uniwin-delivery-info-table th {
+  font-weight: bold;
+  text-align: left;
+  padding-right: 10px;
+}
+
+#shipit-uniwin-prices-modal #shipit-uniwin-prices-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#shipit-uniwin-prices-modal #shipit-uniwin-prices-table thead th {
+  font-weight: bold;
+  text-align: left;
+}
+
+#shipit-uniwin-prices-modal #shipit-uniwin-prices-table td,
+#shipit-uniwin-prices-modal #shipit-uniwin-prices-table th {
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+#shipit-uniwin-prices-modal #shipit-uniwin-prices-table td.align-right,
+#shipit-uniwin-prices-modal #shipit-uniwin-prices-table th.align-right {
+  text-align: right;
+}
+
+/* Style the buttons inside the tab */
+.tabs button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tabs button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tabs button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tab-content {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block !important;
+}
+
+.settings_form .card {
+  max-width: 100%;
+}
+
+.settings_form .form-group.error {
+  margin: 0px;
+  padding: 10px;
+}
+
+.settings_form .help-block {
+  color: red;
+  padding: 10px 0px;
+}
+
+.settings_form p.error {
+  color: red;
+}
+
+.settings_form p.success {
+  color: green;
+}
+
+.shipit_uniwin_loding_text {
+  color: red;
+  animation: blinker 1s linear infinite;
+}
+
+div#wc-backbone-modal-dialog
+  div#shipit-uniwin-prices-modal
+  .wc-backbone-modal-content {
+  background: #d7cad2;
+  width: unset !important;
+}
+
+div#wc-backbone-modal-dialog
+  div#shipit-uniwin-prices-modal
+  .wc-backbone-modal-content
+  header.wc-backbone-modal-header {
+  background: #d7cad2 !important;
+}
+
+div#wc-backbone-modal-dialog-carrier-agent div {
+  background: #d7cad2;
+  width: unset !important;
+}
+
+div#wc-backbone-modal-dialog-carrier-agent header.wc-backbone-modal-header {
+  background: #d7cad2 !important;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+div#mv_other_fields select,
+div#mv_other_fields input {
+  margin-bottom: 5px;
+  margin-top: 6px;
+}
+
+.shipit_uniwin_dimenstions {
+  display: inline-flex;
+}
+
+.shipit_uniwin_dimenstions a {
+  margin-left: 15px;
+  position: relative;
+  top: 3px;
+}
+
+.show_carrier_agent_text img {
+  width: 80px;
+  height: 50px;
+}
+
+.note_content.shipit_uniwin_error::after {
+  border-color: red transparent !important;
+}
+
+.note_content.shipit_uniwin_error {
+  background: red !important;
+  color: #fff;
+}
+
+div#mv_other_fields .select2 {
+  margin-top: 6px !important;
+  margin-bottom: 14px !important;
+  font-size: 15px;
+}
+
+/* Settings form css */
+.register_modal {
+  display: none;
+  top: 0;
+  height: auto;
+  margin: 0 auto;
+  position: fixed;
+  z-index: 40001;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px #000;
+  margin-top: 30px;
+  margin-left: 10%;
+
+  animation-name: fadeIn_Modal;
+  animation-duration: 0.8s;
+}
+
+.uniwin_register_header {
+  width: 100%;
+  height: 70px;
+  border-radius: 10px 10px 0px 0px;
+  border-bottom: 2px solid #ccc;
+}
+
+.uniwin_register_header a {
+  text-decoration: none;
+  float: right;
+  line-height: 70px;
+  margin-right: 20px;
+  color: #aaa;
+}
+
+.uniwin_register_content tr th {
+  width: 100px;
+}
+
+.uniwin_register_content {
+  width: 100%;
+  height: 200px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.uniwin_register_content td input {
+  width: 100%;
+}
+
+.uniwin_register_content .container {
+  padding: 10px 30px;
+}
+
+.uniwin_register_footer {
+  width: 100%;
+  height: 80px;
+  border-radius: 0px 0px 10px 10px;
+  border-top: 2px solid #ccc;
+}
+
+.uniwin_register_footer button {
+  float: right;
+  margin-right: 10px !important;
+  margin-top: 18px !important;
+  text-decoration: none !important;
+  margin-left: 18px !important;
+  width: 111px px;
+  height: 35px;
+  font-size: 16px !important;
+}
+
+/****MEDIA QUERIES****/
+
+@media screen and (min-width: 1200px) {
+  .register_modal {
+    width: 800px;
+    height: auto;
+    margin-left: calc(30vw - 250px);
+    margin-top: calc(40vh - 150px);
+  }
+
+  .uniwin_register_header {
+    width: 100%;
+    height: 40px;
+  }
+
+  .uniwin_register_header a {
+    line-height: 40px;
+    margin-right: 10px;
+  }
+
+  .uniwin_register_content {
+    width: 100%;
+    height: 400px;
+    overflow: scroll;
+    overflow-x: hidden;
+  }
+
+  .uniwin_register_footer {
+    width: 100%;
+    height: 70px;
+  }
+}
+
+/****ANIMATIONS****/
+
+@keyframes fadeIn_Modal {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
